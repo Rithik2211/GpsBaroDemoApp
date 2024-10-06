@@ -1,0 +1,15 @@
+{
+  "originHash" : "ddf9eac43a247e6f4054216dcf3ef5aedbb04a5677658f691bc328a2b659ba39",
+  "pins" : [
+    {
+      "identity" : "gpsbarodemosdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Rithik2211/GPSBaroDemoSDK",
+      "state" : {
+        "branch" : "main",
+        "revision" : "d883bb0f84efb98f3deea573ef4c9d2f418c4516"
+      }
+    }
+  ],
+  "version" : 3
+}

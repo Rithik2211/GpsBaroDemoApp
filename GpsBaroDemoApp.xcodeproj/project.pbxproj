@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		A6EEEE5B2CAF22E900B51701 /* GpsBaroDemoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EEEE5A2CAF22E900B51701 /* GpsBaroDemoAppApp.swift */; };
 		A6EEEE5D2CAF22E900B51701 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EEEE5C2CAF22E900B51701 /* ContentView.swift */; };
-		A6EEEE5F2CAF22EC00B51701 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6EEEE5E2CAF22EC00B51701 /* Assets.xcassets */; };
-		A6EEEE622CAF22EC00B51701 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6EEEE612CAF22EC00B51701 /* Preview Assets.xcassets */; };
+		A6EEEE6A2CAF23BB00B51701 /* GPSBaroDemoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = A6EEEE692CAF23BB00B51701 /* GPSBaroDemoSDK */; };
+		A6EEEE6E2CAF27B800B51701 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6EEEE5E2CAF22EC00B51701 /* Assets.xcassets */; };
+		A6EEEE6F2CAF27BC00B51701 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6EEEE612CAF22EC00B51701 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		A6EEEE5C2CAF22E900B51701 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A6EEEE5E2CAF22EC00B51701 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6EEEE612CAF22EC00B51701 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A6EEEE6B2CAF275D00B51701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6EEEE6A2CAF23BB00B51701 /* GPSBaroDemoSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +58,7 @@
 				A6EEEE5C2CAF22E900B51701 /* ContentView.swift */,
 				A6EEEE5E2CAF22EC00B51701 /* Assets.xcassets */,
 				A6EEEE602CAF22EC00B51701 /* Preview Content */,
+				A6EEEE6B2CAF275D00B51701 /* Info.plist */,
 			);
 			path = GpsBaroDemoApp;
 			sourceTree = "<group>";
@@ -76,13 +80,16 @@
 			buildPhases = (
 				A6EEEE532CAF22E900B51701 /* Sources */,
 				A6EEEE542CAF22E900B51701 /* Frameworks */,
-				A6EEEE552CAF22E900B51701 /* Resources */,
+				A6EEEE6D2CAF27B300B51701 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = GpsBaroDemoApp;
+			packageProductDependencies = (
+				A6EEEE692CAF23BB00B51701 /* GPSBaroDemoSDK */,
+			);
 			productName = GpsBaroDemoApp;
 			productReference = A6EEEE572CAF22E900B51701 /* GpsBaroDemoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +118,9 @@
 				Base,
 			);
 			mainGroup = A6EEEE4E2CAF22E900B51701;
+			packageReferences = (
+				A6EEEE682CAF23BB00B51701 /* XCRemoteSwiftPackageReference "GPSBaroDemoSDK" */,
+			);
 			productRefGroup = A6EEEE582CAF22E900B51701 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -121,12 +131,12 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A6EEEE552CAF22E900B51701 /* Resources */ = {
+		A6EEEE6D2CAF27B300B51701 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6EEEE622CAF22EC00B51701 /* Preview Assets.xcassets in Resources */,
-				A6EEEE5F2CAF22EC00B51701 /* Assets.xcassets in Resources */,
+				A6EEEE6F2CAF27BC00B51701 /* Preview Assets.xcassets in Resources */,
+				A6EEEE6E2CAF27B800B51701 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A6EEEE682CAF23BB00B51701 /* XCRemoteSwiftPackageReference "GPSBaroDemoSDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Rithik2211/GPSBaroDemoSDK";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A6EEEE692CAF23BB00B51701 /* GPSBaroDemoSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6EEEE682CAF23BB00B51701 /* XCRemoteSwiftPackageReference "GPSBaroDemoSDK" */;
+			productName = GPSBaroDemoSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A6EEEE4F2CAF22E900B51701 /* Project object */;
 }

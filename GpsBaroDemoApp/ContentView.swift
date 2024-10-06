@@ -6,16 +6,30 @@
 //
 
 import SwiftUI
+import GPSBaroDemoSDK
 
 struct ContentView: View {
+    @State private var showGPSBaro = false
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        Button(action: connectSdk) {
+            Text("Show SDK UI")
+                .foregroundColor(.white)
+                .font(.headline)
+                .padding()
+                .frame(minWidth: 150)
+                .background(Color.blue)
+                .cornerRadius(8)
         }
-        .padding()
+        .sheet(isPresented: $showGPSBaro) {
+            GPSAndBaroView(){
+                showGPSBaro = false
+            }
+        }
+    }
+    
+    private func connectSdk() {
+        showGPSBaro = true
     }
 }
 
